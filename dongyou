@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>鈍餃</title>
+</head>
+<body>
+    <h1>鈍餃</h1>
+    <img src="image.jpg" width=640 height=330 alt="鈍餃の画像">
+    <h2>鈍餃のおすすめポイント</h2>
+    <ul>
+        <li>ラーメンをはじめとしたさまざまな中華料理が楽しめる</li>
+        <li>お手ごろなお値段でボリューム満点・味も申し分ない</li>
+        <li>注文してから料理が運ばれるまでが短いのが良い</li>
+    </ul>
+</body>
+</html>
+    
