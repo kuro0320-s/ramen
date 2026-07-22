@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>おすすめのラーメン店</title>
+        <link rel="stylesheet" href="style-main.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <input type="checkbox" id="menu-btn-opn">
+            <label for="menu-btn-opn" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <label for="menu-btn-opn" class="overlay"></label>
+
+            <label for="menu-btn-opn" class="cls">
+                <span class="cls-span">×</span>
+            </label>
+
+            <nav class="menu-contents">
+                <ul>
+                    <li>おしながき</li>
+                    <li><a href="index-main.html">ホーム</a></li>
+                    <li><a href="https://kadai-moodle.kagawa-u.ac.jp/course/view.php?id=25307">Moodle</a></li>
+                    <li><a href="https://abehiroshi.la.coocan.jp/">速度診断用</a></li>
+                </ul>
+            </nav>
+
+            <h1 style="color: white; text-align:center;">おすすめのラーメン店</h1>
+
+        </header>
+
+
+        <div class="container01">
+
+            <a href="kaisenramen/kaisen.html"><div class="midashi">
+                <img src="kaisenramen/海鮮チーズ麺写真.png" class="imgs">
+                <div class="midashi-bottom">
+                    ここに短い説明文（～な味噌ラーメンなど？）<br>
+                    ああああああ
+                </div>
+            </div></a>
+
+            <a href="sample.html"><div class="midashi">
+                <img src="pictures/東京大学写真.png" class="imgs">
+                <div class="midashi-bottom">
+                    ここに説明文<br>
+                    ああああああ
+                </div>
+            </div></a>
+
+        </div>
+
+
+
+        <div class="container01">
+
+            <a href="sample.html"><div class="midashi">
+                <img src="pictures/香川大学写真.jpg" class="imgs">
+                <div class="midashi-bottom">
+                    ここに短い説明文（～な味噌ラーメンなど？）<br>
+                    ああああああ
+                </div>
+            </div></a>
+
+            <a href="sample.html"><div class="midashi">
+                <img src="pictures/東京大学写真.png" class="imgs">
+                <div class="midashi-bottom">
+                    ここに説明文<br>
+                    ああああああ
+                </div>
+            </div></a>
+            
+        </div>
+
+
+        <div class="container01">
+
+            <a href="sample.html"><div class="midashi">
+                <img src="pictures/香川大学写真.jpg" class="imgs">
+                <div class="midashi-bottom">
+                    ここに短い説明文（～な味噌ラーメンなど？）<br>
+                    ああああああ
+                </div>
+            </div></a>
+
+            <a href="sample.html"><div class="midashi">
+                <img src="pictures/東京大学写真.png" class="imgs">
+                <div class="midashi-bottom">
+                    ここに説明文<br>
+                    ああああああ
+                </div>
+            </div></a>
+            
+        </div>
+
+
+        <script>
+
+            const targets = document.querySelectorAll(".midashi");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            } , {
+                threshold: 0.2
+            });
+
+            targets.forEach(target => observer.observe(target));
+
+        </script>
+
+
+    </body>
+
+</html>
