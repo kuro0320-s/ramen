@@ -27,6 +27,16 @@
         border-radius: 10px;
         object-fit: cover;
     }
+    .item{
+        opacity: 0;
+        transform: translateY(200px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .item.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 
     .intro-modern {
         border: 1px solid #ddd;
@@ -95,4 +105,27 @@
 <h2>公式SNS：
     <a href="https://www.instagram.com/torori_takamatsu?igsh=MXNhdXd5Zzg5NWE2bw=="><img src="instagram-icon.png" style="width: 3%;">海鮮チーズ麺トロリInstagram(インスタグラム)</a>
 </h2>
+
+
+    <script>
+
+            const targets = document.querySelectorAll(".item");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } 
+                });
+            } , {
+                threshold: 0.2
+            });
+
+            targets.forEach(target => observer.observe(target));
+
+        </script>
+
+
+
+</body>
 </html>

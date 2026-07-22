@@ -4,11 +4,45 @@
     <head>
         <meta charset="utf-8">
         <title>サンプル</title>
+        <style>
+            .image{
+                width: 700px;
+                opacity: 0;
+                transition: opacity 0.6s ease, transform 0.6s ease;
+                
+            }
+            .image.show{
+                opacity: 1;
+                
+            }
+        </style>
     </head>
 
     <body>
         <h1>
             これはサンプルです
         </h1>
+        <img class="image" src="Pictures/香川大学写真.jpg">
+
+        <img src="Pictures/香川大学写真.jpg">
+
+        <script>
+
+            const targets = document.querySelectorAll(".image");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } 
+                });
+            } , {
+                threshold: 0.2
+            });
+
+            targets.forEach(target => observer.observe(target));
+
+        </script>
+
     </body>
 </html>
