@@ -93,9 +93,9 @@ body{
 #menu-btn-opn:checked ~ .overlay{
     display: block;
 }
-/*#menu-btn-opn{
+#menu-btn-opn{
     display: none;
-}*/
+}
 #menu-btn-opn:checked ~ .cls{
     transform: translateX(0);
 }
