@@ -71,6 +71,7 @@ body{
     justify-content: flex-end;
     padding: 10px 20px;
     min-height: 48px;
+    border-bottom: 1px solid red;
 }
 .menu-header h2{
     margin: 0 auto;
@@ -79,7 +80,6 @@ body{
     position: relative;
     width: 100%;
     height: 98%;
-    margin-top: 7px;
     border-radius: 7px;
     z-index: 998;
     background: #fff;
@@ -90,6 +90,7 @@ body{
     height: 100%;
     overflow-y: auto;
     box-sizing: border-box;
+    padding-right: 12px;
 }
 .menu-boxes{
     cursor: pointer;
@@ -117,7 +118,6 @@ body{
 }
 .menu-contents ul{
     list-style: none;
-    margin-top: 70px;
 }
 .menu-contents a{
     color: #000;
