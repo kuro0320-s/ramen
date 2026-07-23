@@ -61,6 +61,23 @@ body{
     transform: translateX(100%);
     transition: transform 0.3s ease;
 }
+.menu-boxes{
+    cursor: pointer;
+}
+.menu-boxes li{
+    width: 80%;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    background-color: #e6e6e6;
+    color: #000;
+    border-radius: 1px;
+    box-shadow: 5px 5px 3px #adadad80;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-boxes li:hover {
+    transform: translate(-7px, -7px);
+    box-shadow: 7px 7px 3px #adadad80;
+}
 .menu-contents ul{
     list-style: none;
 }
@@ -102,6 +119,7 @@ body{
 #menu-btn-opn:checked ~ .cls ~ .menu-contents{     /*兄弟要素は~、直後の兄弟要素は+ */
     transform: translateX(0);
 }
+
 
 
 
