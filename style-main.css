@@ -115,6 +115,10 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.container01 a{
+    flex: 1;
+    display: block;
+}
 .imgs{
     width:100%;
     height: 400px;      
