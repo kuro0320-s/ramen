@@ -48,18 +48,48 @@ body{
     border-radius: 2px;
     transition: all 0.3s ease;
 }
-.menu-contents{
+.menu-panel{
     position: fixed;
-    right: 0;
     top: 0;
+    right: 0;
     width: 25%;
     height: 100%;
+    z-index: 998;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+}
+#menu-btn-opn:checked ~ .menu-panel{
+    transform: translateX(0);
+}
+.menu-header{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    min-height: 48px;
+}
+.menu-header h2{
+    margin: 0 auto;
+}
+.menu-contents{
+    position: relative;
+    width: 100%;
+    height: 98%;
     margin-top: 7px;
     border-radius: 7px;
     z-index: 998;
     background: #fff;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
+    flex: 1;
+    min-height: 0;
+}
+.menu-scroll{
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 .menu-boxes{
     cursor: pointer;
@@ -72,9 +102,9 @@ body{
 .menu-boxes li{
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 20px;
-    margin-bottom: 18px;
-    margin-left: 2px;
+    padding: 22px 24px;
+    margin-bottom: 12px;
+    font-size: 21px;
     background-color: #e6e6e6;
     color: #000;
     border-radius: 5px;
@@ -87,22 +117,18 @@ body{
 }
 .menu-contents ul{
     list-style: none;
-    margin-top: 55px;
+    margin-top: 70px;
 }
 .menu-contents a{
     color: #000;
 }
 .cls{
-    position: fixed;
-    right: 30px;
-    top: 10px;
-    transform: translateX(200%);
-    transition: transform 0.3s ease;
-    z-index: 999;
+    position: static;
+    cursor: pointer;
 }
 .cls-span{
-    cursor: pointer;
     font-size: 50px;
+    line-height: 1;
 }
 .overlay{
     display: none;
@@ -120,12 +146,6 @@ body{
 }
 #menu-btn-opn{
     display: none;
-}
-#menu-btn-opn:checked ~ .cls{
-    transform: translateX(0);
-}
-#menu-btn-opn:checked ~ .cls ~ .menu-contents{     /*兄弟要素は~、直後の兄弟要素は+ */
-    transform: translateX(0);
 }
 
 
