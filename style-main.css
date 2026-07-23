@@ -68,14 +68,15 @@ body{
     width: 80%;
     padding: 16px 20px;
     margin-bottom: 18px;
+    margin-left: 2px;
     background-color: #e6e6e6;
     color: #000;
-    border-radius: 1px;
+    border-radius: 5px;
     box-shadow: 5px 5px 3px #adadad80;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .menu-boxes li:hover {
-    transform: translate(-7px, -7px);
+    transform: translate(-2px, -2px);
     box-shadow: 7px 7px 3px #adadad80;
 }
 .menu-contents ul{
