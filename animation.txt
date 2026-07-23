@@ -1,0 +1,36 @@
+
+</body>の直前に
+
+        <script>
+
+            const targets = document.querySelectorAll(".midashi");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            } , {
+                threshold: 0.2
+            });
+
+            targets.forEach(target => observer.observe(target));
+
+        </script>
+
+
+
+CSSとして（以下サンプル）
+
+.midashi{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.midashi.show{
+    opacity: 1;
+    transform: translateY(0);
+}
