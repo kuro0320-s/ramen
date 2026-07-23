@@ -1,6 +1,7 @@
 body{
     background-color: #000;
     padding-top: 70px;
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
 }
 .header{
     position: fixed;
@@ -52,7 +53,7 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    width: 25%;
+    width: 65%;
     height: 100%;
     z-index: 998;
     transform: translateX(100%);
@@ -71,7 +72,7 @@ body{
     justify-content: flex-end;
     padding: 10px 20px;
     min-height: 48px;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid red;
 }
 .menu-header h2{
     margin: 0 auto;
@@ -99,6 +100,7 @@ body{
     align-items: stretch;
     width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 .menu-boxes li{
     width: 100%;
@@ -179,7 +181,8 @@ a:hover .imgs{
     background-color: #fff;
     flex: 1;
     border-radius: 10px;
-    border: 1px solid red;
+    border:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
     overflow: hidden;
     position: relative;
     opacity: 0;
