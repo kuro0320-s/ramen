@@ -76,6 +76,7 @@ body{
 }
 .menu-header h2{
     margin: 0 auto;
+    padding-left: 83px;
 }
 .menu-contents{
     position: relative;
