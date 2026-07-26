@@ -77,6 +77,7 @@ body{
 .menu-header h2{
     margin: 0 auto;
     padding-left: 83px;
+    padding-top: 8px;
 }
 .menu-contents{
     position: relative;
@@ -130,6 +131,8 @@ body{
     cursor: pointer;
 }
 .cls-span{
+    display: block;
+    padding-top: 4px;
     font-size: 50px;
     line-height: 1;
 }
