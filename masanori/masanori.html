@@ -14,6 +14,12 @@
     <p>高松市で人気のラーメン店</p>
 </header>
 
+<a href="../index-main.html">
+    <div class="hub-btn">
+        <p style="font-size: 15px; font-weight: bold">←<br>もどる</p>
+    </div>
+</a>
+
 <main>
 
     <div class="card">
@@ -57,7 +63,7 @@
 
     <script>
 
-            const targets = document.querySelectorAll(".card");
+            const targets = document.querySelectorAll(".card, .hub-btn");
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {

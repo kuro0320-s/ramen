@@ -4,6 +4,24 @@
     <title>鈍餃</title>
     <style>
 
+        .hub-btn{
+            position: fixed;
+            border-radius: 8px;
+            z-index: 999;
+            bottom: 35px;
+            right: 20px;
+            width: 7%;
+            text-align: center;
+            background-color: #0F5474;
+            color: #fff;
+            box-shadow: 0px 4px 6px #0f577980;
+            transition: all 0.3s ease;
+        }
+        .hub-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 0px 6px 8px #0f5779cc;
+        }
+
         .image{
             opacity: 0;
             transform: translateY(200px);
@@ -18,6 +36,13 @@
 </head>
 <body>
     <h1>鈍餃</h1>
+
+    <a href="../index-main.html">
+        <div class="hub-btn">
+            <p style="font-size: 15px; font-weight: bold;">←<br>もどる</p>
+        </div>
+    </a>
+
     <img src="image.jpg" width=640 height=330 class="image" alt="鈍餃の画像">
     <h2>鈍餃のおすすめポイント</h2>
     <ul>
