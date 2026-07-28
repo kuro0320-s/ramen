@@ -21,8 +21,6 @@
 
         </script>
 
-
-
 CSSとして（以下サンプル）
 
 .midashi{

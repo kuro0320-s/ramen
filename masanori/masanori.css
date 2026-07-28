@@ -32,9 +32,16 @@ main{
     margin-bottom:25px;
     border-radius:15px;
     box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 0.8s ease;
+}
+.card.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.card img{
+.card-img{
     width:100%;
     border-radius:10px;
 }
