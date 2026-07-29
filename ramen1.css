@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(253, 253, 252)
+}
+
+h1{
+    background-color:rgb(96, 191, 222);
+    box-shadow: 10px 5px 5px rgb(163, 162, 162);
+    /*width:600px;*/
+}
+
+h3{
+    background-color:rgb(96, 191, 222);
+    width: 640px;
+    /*height: 330px;*/
+    box-shadow: 10px 5px 5px rgb(163, 162, 162);
+}
+
+address{
+    color:rgb(96, 191, 222);
+}
+
+
