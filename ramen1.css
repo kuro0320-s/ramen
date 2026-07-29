@@ -35,5 +35,13 @@ address{
     transform: translate(-2px, -2px);
     box-shadow: 0px 6px 8px #0f5779cc;
 }
-
+.image{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.image.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 
