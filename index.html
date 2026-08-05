@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>おすすめのラーメン店</title>
+        <link rel="stylesheet" href="style-main.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <input type="checkbox" id="menu-btn-opn">
+            <label for="menu-btn-opn" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <label for="menu-btn-opn" class="overlay"></label>
+
+            <div class="menu-panel">
+                <div class="menu-header">
+                    <h2>おしながき</h2>
+                    <label for="menu-btn-opn" class="cls">
+                        <span class="cls-span">×</span>
+                    </label>
+                </div>
+
+                <nav class="menu-contents">
+                    <div class="menu-scroll">
+                        <ul>
+                            <div class="menu-boxes">
+                                <a href="https://kadai-moodle.kagawa-u.ac.jp/course/view.php?id=25307"><li>Moodle</li></a>
+                                <a href="enishi/kaisen.html"><li>海鮮チーズ麺トロリ高松店</li></a>
+                                <a href="haruhito/dongyou.html"><li>鈍餃</li></a>
+                                <a href="masanori/masanori.html"><li>麺屋 がんてつ</li></a>
+                                <a href="https://www.instagram.com/goumenya/"><li>剛麺家</li></a>
+                                <a href="https://www.instagram.com/menya_kiseki/"><li>軌跡</li></a>
+                                <a href="ramen.html"><li>みつやの里</li></a>
+                                <a href="https://abehiroshi.la.coocan.jp/"><li>速度診断用</li></a>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>                      
+            </div>
+
+            <h1 style="color: white; text-align:center;">おすすめのラーメン店</h1>
+
+        </header>
+
+
+        <div class="container01">
+
+            <a href="enishi/kaisen.html"><div class="midashi">
+                <img src="enishi/海鮮チーズ麺写真.png" class="imgs">
+                <div class="midashi-bottom">
+                    海鮮チーズ麵トロリ高松店<br>
+                    チーズ好きは必見！
+                </div>
+            </div></a>
+
+            <a href="haruhito/dongyou.html"><div class="midashi">
+                <img src="haruhito/image.jpg" class="imgs">
+                <div class="midashi-bottom">
+                    鈍餃<br>
+                    ラーメン以外もおいしい！！！！
+                </div>
+            </div></a>
+
+        </div>
+
+
+
+        <div class="container01">
+
+            <a href="masanori/masanori.html"><div class="midashi">
+                <img src="masanori/ramen.jpeg" class="imgs">
+                <div class="midashi-bottom">
+                    麺屋 がんてつ<br>
+                </div>
+            </div></a>
+
+            <a href="https://www.instagram.com/goumenya/"><div class="midashi">
+                <img src="pictures/ごうめんや.jpg" class="imgs">
+                <div class="midashi-bottom">
+                    剛麺家<br>
+                </div>
+            </div></a>
+            
+        </div>
+
+
+        <div class="container01">
+
+            <a href="https://www.instagram.com/menya_kiseki/"><div class="midashi">
+                <img src="pictures/軌跡.jpg" class="imgs">
+                <div class="midashi-bottom">
+                    軌跡<br>
+                </div>
+            </div></a>
+
+            <a href="ramen.html"><div class="midashi">
+                <img src="Pictures/PXL_20260718_032414574.MP.jpg" class="imgs">
+                <div class="midashi-bottom">
+                    みつやの里<br>
+                </div>
+            </div></a>
+            
+        </div>
+
+
+        <script>
+
+            const targets = document.querySelectorAll(".midashi");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            } , {
+                threshold: 0.2
+            });
+
+            targets.forEach(target => observer.observe(target));
+
+        </script>
+
+
+    </body>
+
+</html>
